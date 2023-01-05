@@ -1,9 +1,9 @@
 <template>
   <HelloWorld />
-  <ForPartners />
+  <ForUsers />
 </template>
 
 <script setup>
   import HelloWorld from '@/components/HelloWorld.vue'
-  import ForPartners from '@/components/ForPartners.vue'
+  import ForUsers from '@/components/ForUsers.vue';
 </script>
