@@ -1,8 +1,13 @@
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+
+let props = defineProps({
+  roadMapRoute: String,
+});
 
 let drawer = ref(false);
-
+let router = useRouter()
 </script>
 
 <template>
@@ -25,7 +30,7 @@ let drawer = ref(false);
       <v-navigation-drawer v-model="drawer" temporary>
         <v-list-item prepend-icon="mdi-view-dashboard" title="Пользователям" value="home"></v-list-item>
         <v-list-item prepend-icon="mdi-forum" title="Партнёрам" value="home"></v-list-item>
-        <v-list-item prepend-icon="mdi-view-dashboard" title="Дорожная карта" value="home"></v-list-item>
+        <v-list-item prepend-icon="mdi-view-dashboard" title="Дорожная карта" value="home" @click="router.push(roadMapRoute?roadMapRoute:'/roadMap')"></v-list-item>
       </v-navigation-drawer>
 
 </template>
