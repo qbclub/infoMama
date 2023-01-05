@@ -1,5 +1,7 @@
 // Composables
-import roadMapVue from '../components/roadMap.vue'
+import roadMapVue from '../components/roadMap.vue';
+import ForPartnersVue from '../components/ForPartners.vue';
+import ForUsersVue from '../components/ForUsers.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -21,6 +23,16 @@ const routes = [
     path: '/roadMap',
     name: 'roadMap',
     component: roadMapVue
+  },
+  {
+    path: '/forPartners',
+    name: 'forPartners',
+    component: ForPartnersVue
+  },
+  {
+    path: '/forUsers',
+    name: 'forUsers',
+    component: ForUsersVue
   },
 ]
 
