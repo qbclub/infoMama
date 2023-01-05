@@ -81,9 +81,9 @@
 </template>
 <style>
 .v-card{
-  border: 2px solid black !important;
+  border: 2px solid #5CBBF6 !important;
 }
 .big{
-  border: 2px solid !important;
+  border: 2px solid #1867C0!important;
 }
 </style>
