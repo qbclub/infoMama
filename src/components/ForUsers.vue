@@ -9,7 +9,7 @@
     </v-card-title>
 
 
-    <v-row justify="center" align="start">
+    <v-row justify="start" align="start">
       <v-col cols="auto">
         <v-card
           width="400"
