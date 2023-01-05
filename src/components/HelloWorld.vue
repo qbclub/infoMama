@@ -1,12 +1,10 @@
 <script setup>
-  //
 </script>
 
 <template>
-  <v-container class="fill-height">
-    <v-responsive class="d-flex align-center text-center fill-height">
- Привет
-    </v-responsive>
-  </v-container>
+  <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" height="45vh"
+    class="d-flex text-center align-center text-white">
+    <h1>Привет</h1>
+  </v-parallax>
 </template>
 

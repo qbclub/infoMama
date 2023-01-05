@@ -1,4 +1,5 @@
 // Composables
+import roadMapVue from '../components/roadMap.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -15,6 +16,11 @@ const routes = [
         component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
       },
     ],
+  },
+  {
+    path: '/roadMap',
+    name: 'roadMap',
+    component: roadMapVue
   },
 ]
 
