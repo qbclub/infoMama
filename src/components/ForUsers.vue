@@ -9,10 +9,10 @@
     </v-card-title>
 
 
-    <v-row justify="start" align="start">
-      <v-col cols="auto">
+    <v-row justify="center" class="ma-4">
+      <v-col class="d-flex flex-column">
         <v-card
-          width="400"
+          width="auto"
           height="300"
           class="mb-4"
           title="This is a title"
@@ -21,7 +21,7 @@
           variant="outlined"
         ></v-card>
         <v-card
-          width="400"
+          width="auto"
           height="200"
           title="This is a title"
           subtitle="This is a subtitle"
@@ -30,9 +30,9 @@
         ></v-card>
       </v-col>
 
-      <v-col cols="auto">
+      <v-col class="d-flex flex-column" >
         <v-card
-          width="400"
+          width="auto"
           height="200"
           class="mb-4"
           title="This is a title"
@@ -42,7 +42,7 @@
         ></v-card>
 
         <v-card
-          width="400"
+          width="auto"
           height="300"
           title="This is a title"
           subtitle="This is a subtitle"
@@ -51,9 +51,9 @@
         ></v-card>
       </v-col>
 
-      <v-col cols="auto">
+      <v-col class="d-flex flex-column" >
         <v-card
-          width="400"
+          width="auto"
           height="300"
           class="mb-4"
           title="This is a title"
@@ -62,7 +62,7 @@
           variant="outlined"
         ></v-card>
         <v-card
-          width="400"
+          width="auto"
           height="200"
           title="This is a title"
           subtitle="This is a subtitle"
