@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <v-card class="mx-auto h-auto w-75 rounded-xl big primary" variant="outlined">
+  <v-card class="mx-auto my-4 h-auto w-75 rounded-xl big primary" variant="outlined">
     <v-container>
       <v-card-title class="text-h4 font-weight-bold pl-0 mb-6" >
         Для пользователей
@@ -79,11 +79,11 @@
     </v-container>
   </v-card>
 </template>
-<style>
+<style scoped>
 .v-card{
   border: 2px solid #5CBBF6 !important;
 }
 .big{
-  border: 2px solid #1867C0!important;
+  border: 2px solid #1867C0 !important;
 }
 </style>
