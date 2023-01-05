@@ -5,52 +5,15 @@ import wordcloud from '../assets/images/wordcloud-infomama.webp'
 
 <template>
   <v-parallax :src="mainBanner" height="75vh">
-    <v-row no-gutters>
-      <v-col cols="8">
-
+    <v-row no-gutters class="h-100 align-md-end justify-center justify-md-start">
+      <v-col cols="3" >
+        <img :src="wordcloud"  class="w-100" />
       </v-col>
-      <v-col cols="4">
-        <img :src="wordcloud" style="object-fit: contain; max-height: 70vh" />
+      <v-col  class="align-self-stretch d-none d-md-flex justyfy-center align-center" offset-md="6" md="3">
+       <span class="text-md-h4 text-h5 font-weight-bold text-primary">Мамой быть <br> <span class=" text-secondary">не</span>легко!</span> 
       </v-col>
-      <!-- <v-col cols="4">
-        <v-card class="mx-8 pa-3">
-          <h3 class="mb-2">
-            Роддом, больницы, узи, анализы, специалисты
-          </h3>
-          <h3 class="mb-2">
-            Подготовка к родам, гимнастика, фитнес, купоны на скидку
-          </h3>
-          <h3>
-            Няня и уход за ребёнком
-          </h3>
-        </v-card>
-      </v-col>
-      <v-col cols="4">
-        <v-card class="mx-8 pa-3">
-          <h3 class="mb-2">
-            Школа, кружки и секции
-          </h3>
-          <h3 class="mb-2">
-            Садик, школы, колледжи, ВУЗы, репетиторы
-          </h3>
-          <h3>
-            Юридическая помощь
-          </h3>
-        </v-card>
-      </v-col>
-      <v-col cols="4">
-        <v-card class="mx-8 pa-3">
-          <h3 class="mb-2">
-            Развлечения и отдых
-          </h3>
-          <h3 class="mb-2">
-            Хобби для мам
-          </h3>
-          <h3>
-            Барахолка и доставка продуктов
-          </h3>
-        </v-card>
-      </v-col> -->
+   
+   
     </v-row>
   </v-parallax>
 </template>

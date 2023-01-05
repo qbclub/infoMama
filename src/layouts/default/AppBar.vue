@@ -29,8 +29,8 @@ let router = useRouter()
             Your browser does not support the video tag.
         </video>
 
-        <v-toolbar-title> Основная информация </v-toolbar-title>
-
+        <v-toolbar-title> ИнфоМама </v-toolbar-title>
+      
         <v-spacer></v-spacer>
       </v-app-bar>
 

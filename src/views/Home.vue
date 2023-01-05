@@ -4,6 +4,7 @@ import ForUsers from "@/components/ForUsers.vue";
 import ForPartners from "@/components/ForPartners.vue";
 import RoadMap from "@/components/roadMap.vue";
 import VideoLogo from '@/components/VideoLine.vue';
+import Contacts from '@/components/Contacts.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import VideoLogo from '@/components/VideoLine.vue';
   <VideoLogo />
   <ForPartners />
   <RoadMap />
+  <Contacts/>
 </template>
 
 
