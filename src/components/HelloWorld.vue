@@ -6,7 +6,7 @@ import wordcloud from '../assets/images/wordcloud-infomama.webp'
 <template>
   <v-parallax :src="mainBanner" height="75vh">
     <v-row no-gutters class="h-100 align-md-end justify-center justify-md-start">
-      <v-col cols="3" class="pa-2" >
+      <v-col cols="4" md="3" class="pa-2" >
         <img :src="wordcloud"  class="w-100" />
       </v-col>
       <v-col  class="align-self-stretch d-none d-md-flex justyfy-center align-center" offset-md="6" md="3">

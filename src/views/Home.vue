@@ -9,7 +9,7 @@ import Contacts from '@/components/Contacts.vue';
 
 <template>
   <HelloWorld />
-  <ForUsers />
+  <ForUsers id="for-users"></ForUsers>
   <VideoLogo />
   <ForPartners />
   <RoadMap />
