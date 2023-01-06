@@ -12,14 +12,14 @@
       </v-row></v-container
     >
 
-    <v-timeline side="end">
+    <v-timeline side="end" class="pa-4">
       <v-timeline-item dot-color="primary" size="small">
         <div class="text-h6">1-ый квартал 2023</div>
         <div class="d-flex">
           <div>
-            <div class="text-h10">Создание промо-сайта</div>
+            <div class="text-h10">Промо-сайт</div>
             <div class="text-h10">Концепт</div>
-            <div class="text-h10">Начало разработки приложения</div>
+            <div class="text-h10">Начало разработки</div>
           </div>
         </div>
       </v-timeline-item>
@@ -30,7 +30,7 @@
           <div class="d-flex">
             <div>
               <div class="text-h10">
-                Развитие функциональности
+                Развитие 
               </div>
               <div class="text-h10">Оптимизация</div>
             </div>
@@ -45,7 +45,7 @@
             <div class="text-h10">
               Тестирование и исправление
             </div>
-            <div class="text-h10">Публикация сайта</div>
+            <div class="text-h10">Публикация</div>
             <div class="text-h10">Техническая поддержка</div>
           </div>
         </div>
