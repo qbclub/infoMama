@@ -5,9 +5,9 @@
     <v-container>
       <v-row>
         <v-col>
-          <span class="text-md-h4 text-h5 font-weight-bold pl-0 mb-6">
+          <v-card-title class="text-md-span text-h5 font-weight-bold pl-0 mb-6">
            Дорожная карта
-          </span>
+          </v-card-title>
         </v-col>
       </v-row></v-container
     >

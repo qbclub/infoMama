@@ -9,11 +9,11 @@ import Contacts from '@/components/Contacts.vue';
 
 <template>
   <HelloWorld />
-  <ForUsers id="for-users"></ForUsers>
+  <ForUsers id="for-users"/>
   <VideoLogo />
-  <ForPartners />
-  <RoadMap />
-  <Contacts/>
+  <ForPartners id="partners" />
+  <RoadMap  id="roadmap"/>
+  <Contacts id="contacts"/>
 </template>
 
 

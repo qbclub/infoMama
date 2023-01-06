@@ -8,16 +8,17 @@ let props = defineProps({
   usersRoute: String,
 });
 
+const options = {
+  duration: 300,
+  offset: 0,
+  easing: "easeInOutCubic",
+};
+
 let drawer = ref(false);
 let router = useRouter();
 </script>
 
 <template>
-  <!-- <v-app-bar border class="d-flex">
-      <div>Пользователям</div>
-      <div>Партнёрам</div>
-      <div>Дорожная карта</div>
-  </v-app-bar> -->
   <v-app-bar prominent>
     <v-app-bar-nav-icon
       variant="text"
@@ -27,27 +28,38 @@ let router = useRouter();
       <source src="../../assets/vk.mp4" />
     </video>
 
-    <v-toolbar-title> ИнфоМама </v-toolbar-title>
+    <v-toolbar-title class="pa-0 font-weight-bold"> ИнфоМама </v-toolbar-title>
   </v-app-bar>
 
   <v-navigation-drawer v-model="drawer" temporary>
-    <v-list-item
-      prepend-icon="mdi-view-dashboard"
-      title="Пользователям"
-      value="home"
-      @click="router.push(usersRoute ? usersRoute : '/forUsers')"
-    ></v-list-item>
-    <v-list-item
-      prepend-icon="mdi-forum"
-      title="Партнёрам"
-      value="home"
-      @click="router.push(partnersRoute ? partnersRoute : '/forPartners')"
-    ></v-list-item>
-    <v-list-item
-      prepend-icon="mdi-view-dashboard"
-      title="Дорожная карта"
-      value="home"
-      @click="router.push(roadMapRoute ? roadMapRoute : '/roadMap')"
-    ></v-list-item>
+    <a href="#for-users">
+      <v-list-item
+        prepend-icon="mdi-view-dashboard"
+        title="Мамам и папам"
+        @click="$vuetify.Goto('#for-users', options)"
+      ></v-list-item>
+    </a>
+    <a href="#partners">
+      <v-list-item prepend-icon="mdi-forum" title="Партнёрам"></v-list-item>
+    </a>
+    <a href="#roadmap">
+      <v-list-item
+        prepend-icon="mdi-view-dashboard"
+        title="Дорожная карта"
+      ></v-list-item>
+    </a>
+    <a href="#contacts">
+      <v-list-item
+        prepend-icon="mdi-view-dashboard"
+        title="Контакты"
+      ></v-list-item>
+    </a>
   </v-navigation-drawer>
 </template>
+<style lang="scss" scoped>
+a {
+  text-decoration: none;
+  color: black;
+}
+</style>
+
