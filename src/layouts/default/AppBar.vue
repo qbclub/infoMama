@@ -23,7 +23,7 @@ let router = useRouter();
       variant="text"
       @click.stop="drawer = !drawer"
     ></v-app-bar-nav-icon>
-    <video width="100" autoplay loop muted playsinline>
+    <video width="100" playsinline autoplay loop muted>
       <source src="../../assets/vk.mp4" />
     </video>
 
