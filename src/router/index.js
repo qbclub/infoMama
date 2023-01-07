@@ -20,21 +20,7 @@ const routes = [
       },
     ],
   },
-  {
-    path: '/roadMap',
-    name: 'roadMap',
-    component: roadMapVue
-  },
-  {
-    path: '/forPartners',
-    name: 'forPartners',
-    component: ForPartnersVue
-  },
-  {
-    path: '/forUsers',
-    name: 'forUsers',
-    component: ForUsersVue
-  },
+
 ]
 
 

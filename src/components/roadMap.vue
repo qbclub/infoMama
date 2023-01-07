@@ -1,4 +1,14 @@
-<script setup></script>
+<script setup>
+import { breakpointsTailwind, useBreakpoints } from "@vueuse/core";
+
+const breakpoints = useBreakpoints(breakpointsTailwind);
+
+const md = breakpoints.smallerOrEqual("md");
+// const largerThanSm = breakpoints.greater('sm') // only larger than sm
+// const lgAndSmaller = breakpoints.smallerOrEqual('lg') // lg and smaller
+// const smallerThanLg = breakpoints.smaller('lg') // only smaller than lg
+</script>
+
 
 <template>
   <div class="bg-tertiary">
@@ -6,64 +16,48 @@
       <v-row>
         <v-col>
           <v-card-title class="text-md-span text-h5 font-weight-bold pl-0 mb-6">
-           Дорожная карта
+            Дорожная карта
           </v-card-title>
         </v-col>
-      </v-row></v-container
-    >
+      </v-row>
 
-    <v-timeline side="end" class="pa-4">
-      <v-timeline-item dot-color="primary" size="small">
-        <div class="text-h6">1-ый квартал 2023</div>
-        <div class="d-flex">
-          <div>
-            <div class="text-h10">Промо-сайт</div>
-            <div class="text-h10">Концепт</div>
-            <div class="text-h10">Начало разработки</div>
-          </div>
-        </div>
-      </v-timeline-item>
+      <v-row>
+        <v-col>
+          <v-timeline side="end" :direction="md ? 'vertical' : 'horizontal'">
+            <v-timeline-item dot-color="primary" fill-dot size="small">
+              <div class="font-weight-bold">1кв. 2023</div>
 
-      <v-timeline-item dot-color="secondary" size="small">
-        <template v-slot:opposite>
-          <div class="text-h6">2-ой квартал 2023</div>
-          <div class="d-flex">
-            <div>
-              <div class="text-h10">
-                Развитие 
+              <div>Промо-сайт</div>
+              <div>Концепт</div>
+              <div>Начало разработки</div>
+            </v-timeline-item>
+
+            <v-timeline-item dot-color="secondary" fill-dot size="small">
+              <template v-slot:opposite>
+                <div class="font-weight-bold">2кв. 2023</div>
+
+                <div>Развитие</div>
+                <div>Оптимизация</div>
+              </template>
+            </v-timeline-item>
+
+            <v-timeline-item dot-color="primary" fill-dot size="small">
+              <div class="font-weight-bold">3кв. 2023</div>
+              <div>
+                Тестирование, <br />
+                исправление
               </div>
-              <div class="text-h10">Оптимизация</div>
-            </div>
-          </div>
-        </template>
-      </v-timeline-item>
+            </v-timeline-item>
 
-      <v-timeline-item dot-color="primary" size="small">
-        <div class="text-h6">3-ий квартал 2023</div>
-        <div class="d-flex">
-          <div>
-            <div class="text-h10">
-              Тестирование и исправление
-            </div>
-            <div class="text-h10">Публикация</div>
-            <div class="text-h10">Техническая поддержка</div>
-          </div>
-        </div>
-      </v-timeline-item>
-
-      <v-timeline-item dot-color="secondary" size="small">
-        <template v-slot:opposite>
-          <div class="text-h6">4-ый квартал 2023</div>
-          <div class="d-flex">
-            <div>
-              <div class="text-h10">Релиз продукта</div>
-              <div class="text-h10">
-                Размещения в AppStore, <br> PlayMarket
-              </div>
-            </div>
-          </div>
-        </template>
-      </v-timeline-item>
-    </v-timeline>
+            <v-timeline-item dot-color="secondary" fill-dot size="small">
+              <template v-slot:opposite>
+                <div class="font-weight-bold">4кв. 2023</div>
+                <div>Релиз продукта</div>
+              </template>
+            </v-timeline-item>
+          </v-timeline>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
