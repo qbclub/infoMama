@@ -15,13 +15,13 @@ const md = breakpoints.smallerOrEqual("md");
     <v-container>
       <v-row>
         <v-col>
-          <v-card-title class="text-md-span text-h5 font-weight-bold pl-0 mb-6">
+          <v-card-title class="text-md-span text-h5 font-weight-bold">
             Дорожная карта
           </v-card-title>
         </v-col>
       </v-row>
 
-      <v-row>
+      <v-row >
         <v-col>
           <v-timeline class="ma-4"  side="end" :direction="md ? 'vertical' : 'horizontal'">
             <v-timeline-item dot-color="primary" fill-dot size="small">
