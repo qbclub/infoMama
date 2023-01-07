@@ -11,7 +11,7 @@ const md = breakpoints.smallerOrEqual("md");
 
 
 <template>
-  <div class="bg-tertiary">
+  <div>
     <v-container>
       <v-row>
         <v-col>
@@ -23,12 +23,11 @@ const md = breakpoints.smallerOrEqual("md");
 
       <v-row>
         <v-col>
-          <v-timeline side="end" :direction="md ? 'vertical' : 'horizontal'">
+          <v-timeline class="ma-4"  side="end" :direction="md ? 'vertical' : 'horizontal'">
             <v-timeline-item dot-color="primary" fill-dot size="small">
               <div class="font-weight-bold">1кв. 2023</div>
 
               <div>Промо-сайт</div>
-              <div>Концепт</div>
               <div>Начало разработки</div>
             </v-timeline-item>
 
@@ -58,6 +57,10 @@ const md = breakpoints.smallerOrEqual("md");
           </v-timeline>
         </v-col>
       </v-row>
+ 
     </v-container>
   </div>
 </template>
+<style lang="scss" scoped>
+
+</style>

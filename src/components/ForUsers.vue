@@ -5,9 +5,14 @@
 <template>
   <div class="bg">
     <v-container>
-      <v-card-title class="text-md-span text-h5 font-weight-bold pl-0 mb-6">
-        Мамам и папам
-      </v-card-title>
+      <v-row>
+        <v-col>
+          <v-card-title class="text-md-span text-h5 font-weight-bold pl-0 mb-6">
+            Мамам и папам
+          </v-card-title>
+        </v-col>
+      </v-row>
+
       <v-row dense>
         <v-col class="flex-column" cols="12" md="4">
           <v-hover v-slot="{ isHovering, props }" open-delay="200">

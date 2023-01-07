@@ -42,6 +42,9 @@ let router = useRouter();
     <a href="#partners">
       <v-list-item prepend-icon="mdi-forum" title="Партнёрам"></v-list-item>
     </a>
+    <a href="#team">
+      <v-list-item prepend-icon="mdi-forum" title="Команда"></v-list-item>
+    </a>
     <a href="#roadmap">
       <v-list-item
         prepend-icon="mdi-view-dashboard"
