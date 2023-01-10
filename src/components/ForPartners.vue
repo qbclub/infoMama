@@ -1,12 +1,13 @@
 <script setup>
-//
+
+
 </script>
 
 <template>
   <div>
     <v-container>
       <v-row>
-        <v-col cols="12">
+        <v-col>
           <v-card-title class="text-md-span text-h5 font-weight-bold">
             Партнерам и инвесторам
           </v-card-title>
@@ -52,8 +53,8 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Сервис платформы "Умный город"</v-card-title>
+                <v-card-text> про умный город и Смарт Глазов</v-card-text>
               </v-card>
             </v-hover>
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
@@ -64,8 +65,8 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> При поддержке сообщества "Мамы Глазова"</v-card-title>
+                <v-card-text> количество и описание</v-card-text>
               </v-card>
             </v-hover>
           </div>
@@ -80,7 +81,19 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
+                <v-card-title> Высокая степеь доверия</v-card-title>
+                <v-card-text> как сарафанное радио</v-card-text>
+              </v-card>
+            </v-hover>
+            <v-hover v-slot="{ isHovering, props }" open-delay="200">
+              <v-card
+                width="auto"
+                class="rounded-xl ma-2"
+                :elevation="isHovering ? 16 : 2"
+                :class="{ 'on-hover': isHovering }"
+                v-bind="props"
+              >
+                <v-card-title> Целевая аудитория</v-card-title>
                 <v-card-text> тут текст</v-card-text>
               </v-card>
             </v-hover>
@@ -92,19 +105,7 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ isHovering, props }" open-delay="200">
-              <v-card
-                width="auto"
-                class="rounded-xl ma-2"
-                :elevation="isHovering ? 16 : 2"
-                :class="{ 'on-hover': isHovering }"
-                v-bind="props"
-              >
-                <v-card-title> Заголовок</v-card-title>
+                <v-card-title> Точное попадание рекламой</v-card-title>
                 <v-card-text> тут текст</v-card-text>
               </v-card>
             </v-hover>

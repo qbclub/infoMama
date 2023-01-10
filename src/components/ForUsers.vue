@@ -1,5 +1,4 @@
 <script setup>
-//
 </script>
 
 <template>
@@ -24,8 +23,26 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Образование</v-card-title>
+                <v-card-text>
+                  <v-chip
+                    v-for="(item, index) in [
+                      'Школы',
+                      'Детские сады',
+                      'Вузы',
+                      'Колледжи',
+                      'Репетиторы',
+                      'Кружки',
+                    ]"
+                    class="ma-1"
+                    :key="index"
+                  >
+                    {{ item }}
+                  </v-chip> </v-card-text
+                ><img
+                  src="../assets/иконки/purple.png"
+                  class="card-icon ma-2"
+                />
               </v-card>
             </v-hover>
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
@@ -36,8 +53,25 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Медицина</v-card-title>
+                <v-card-text>
+                  <v-chip
+                    v-for="(item, index) in [
+                      'Врачи',
+                      'Больницы',
+                      'Поликлиники',
+                      'Аптеки',
+                      'Массаж',
+                    ]"
+                    class="ma-1"
+                    :key="index"
+                  >
+                    {{ item }}
+                  </v-chip> </v-card-text
+                ><img
+                  src="../assets/иконки/purple.png"
+                  class="card-icon ma-2"
+                />
               </v-card>
             </v-hover>
           </div>
@@ -52,8 +86,26 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Досуг</v-card-title>
+                <v-card-text>
+                  <v-chip
+                    v-for="(item, index) in [
+                      'Праздники',
+                      'Выставки',
+                      'Кино',
+                      'Путешествия',
+                      'Театры',
+                      'Рестораны',
+                    ]"
+                    class="ma-1"
+                    :key="index"
+                  >
+                    {{ item }}
+                  </v-chip> </v-card-text
+                ><img
+                  src="../assets/иконки/purple.png"
+                  class="card-icon ma-2"
+                />
               </v-card>
             </v-hover>
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
@@ -64,8 +116,24 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Красота</v-card-title>
+                <v-card-text>
+                  <v-chip
+                    v-for="(item, index) in [
+                      'Салоны',
+                      'Парикмахерские',
+                      'Спорт',
+                      'Фитнес',
+                    ]"
+                    class="ma-1"
+                    :key="index"
+                  >
+                    {{ item }}
+                  </v-chip> </v-card-text
+                ><img
+                  src="../assets/иконки/purple.png"
+                  class="card-icon ma-2"
+                />
               </v-card>
             </v-hover>
           </div>
@@ -80,8 +148,24 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Работа</v-card-title>
+                <v-card-text>
+                  <v-chip
+                    v-for="(item, index) in [
+                      'Вакансии',
+                      'Поиск',
+                      'Обучение',
+                      'Услуги',
+                    ]"
+                    class="ma-1"
+                    :key="index"
+                  >
+                    {{ item }}
+                  </v-chip> </v-card-text
+                ><img
+                  src="../assets/иконки/purple.png"
+                  class="card-icon ma-2"
+                />
               </v-card>
             </v-hover>
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
@@ -92,47 +176,57 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ isHovering, props }" open-delay="200">
-              <v-card
-                width="auto"
-                class="rounded-xl ma-2"
-                :elevation="isHovering ? 16 : 2"
-                :class="{ 'on-hover': isHovering }"
-                v-bind="props"
-              >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Барахолка</v-card-title>
+                <v-card-text>
+                  <v-chip
+                    v-for="(item, index) in [
+                      'Куплю',
+                      'Продам',
+                      'Отдам',
+                      'Аренда',
+                      'Разумное потребление',
+                    ]"
+                    class="ma-1"
+                    :key="index"
+                  >
+                    {{ item }}
+                  </v-chip> </v-card-text
+                ><img
+                  src="../assets/иконки/purple.png"
+                  class="card-icon ma-2"
+                />
               </v-card>
             </v-hover>
           </div>
         </v-col>
       </v-row>
     </v-container>
-    <div class="d-none d-md-flex"><img
-      src="../assets/иконки/purple.png"
-      style="top: 10px; left: 10px"
-      id="dot_1"
-    />
-    <img
-      src="../assets/иконки/yellow.png"
-      style="top: 10px; right: 10px"
-      id="dot_2"
-    />
-    <img
-      src="../assets/иконки/purple.png"
-      style="bottom: 10px; right: 10px"
-      id="dot_3"
-    />
-    <img
-      src="../assets/иконки/yellow.png"
-      style="bottom: 10px; left: 10px"
-      id="dot_4"
-    /></div>
-    
+    <!-- <div class="d-none d-md-flex">
+      <img
+        src="../assets/иконки/purple.png"
+        style="top: 10px; left: 10px"
+        id="dot_1"
+        class="dot"
+      />
+      <img
+        src="../assets/иконки/yellow.png"
+        style="top: 10px; right: 10px"
+        id="dot_2"
+        class="dot"
+      />
+      <img
+        src="../assets/иконки/purple.png"
+        style="bottom: 10px; right: 10px"
+        id="dot_3"
+        class="dot"
+      />
+      <img
+        src="../assets/иконки/yellow.png"
+        style="bottom: 10px; left: 10px"
+        id="dot_4"
+        class="dot"
+      />
+    </div> -->
   </div>
 </template>
 <style lang="scss" scoped>
@@ -140,8 +234,14 @@
   background: #b9f8bf;
   position: relative;
 }
-img {
-  height: 20px;
+.card-icon {
+  height: 30px;
   position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.v-chip:hover,
+.v-chip:active {
+  background: #fee792;
 }
 </style>

@@ -28,7 +28,7 @@ let router = useRouter();
       <source src="../../assets/vk.mp4" />
     </video>
 
-    <v-toolbar-title class="pa-0 font-weight-bold"> ИнфоМама </v-toolbar-title>
+    <v-toolbar-title class="font-weight-bold"> ИнфоМама </v-toolbar-title>
   </v-app-bar>
 
   <v-navigation-drawer v-model="drawer" temporary>
@@ -36,7 +36,6 @@ let router = useRouter();
       <v-list-item
         prepend-icon="mdi-view-dashboard"
         title="Мамам и папам"
-        @click="$vuetify.Goto('#for-users', options)"
       ></v-list-item>
     </a>
     <a href="#partners">
@@ -63,6 +62,9 @@ let router = useRouter();
 a {
   text-decoration: none;
   color: black;
+}
+.v-toolbar__content > .v-toolbar-title {
+   margin-inline-start: 0; 
 }
 </style>
 

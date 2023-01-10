@@ -10,9 +10,9 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="4" class="offset-4">
+      <!-- <v-col cols="4" class="offset-4">
         <v-divider color="primary" thickness="5"></v-divider
-      ></v-col>
+      ></v-col> -->
     </v-row>
   </v-container>
 </template>
