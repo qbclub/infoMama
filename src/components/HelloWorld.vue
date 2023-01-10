@@ -1,15 +1,12 @@
 <script setup>
-import mainBanner from '../assets/images/main-banner.png'
+import mainBanner from '../assets/images/banner.png'
 import wordcloud from '../assets/images/wordcloud-infomama.webp'
 </script>
 
 <template>
   <v-parallax :src="mainBanner" height="75vh">
     <v-row no-gutters>
-      <v-col cols="8">
-
-      </v-col>
-      <v-col cols="4">
+      <v-col cols="12" class="d-flex pa-4 justify-end">
         <img :src="wordcloud" style="object-fit: contain; max-height: 70vh" />
       </v-col>
       <!-- <v-col cols="4">
