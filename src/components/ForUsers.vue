@@ -1,4 +1,28 @@
 <script setup>
+import { onMounted } from "vue";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
+
+onMounted(() => {
+  let about = document.querySelectorAll(".about");
+
+  about.forEach((element) => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element,
+        start: " bottom bottom -=300 ",
+        // once: true,
+        // toggleActions: "restart pause resume pause",
+      },
+
+      duration: 1,
+      y: 50,
+      opacity: 0.8,
+      // ease: "back.out(1.7)",
+    });
+  });
+});
 </script>
 
 <template>
@@ -18,7 +42,7 @@
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
               <v-card
                 width="auto"
-                class="rounded-xl ma-2"
+                class="rounded-xl ma-2 about"
                 :elevation="isHovering ? 16 : 2"
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
@@ -48,7 +72,7 @@
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
               <v-card
                 width="auto"
-                class="rounded-xl ma-2"
+                class="rounded-xl ma-2 about"
                 :elevation="isHovering ? 16 : 2"
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
@@ -81,7 +105,7 @@
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
               <v-card
                 width="auto"
-                class="rounded-xl ma-2"
+                class="rounded-xl ma-2 about"
                 :elevation="isHovering ? 16 : 2"
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
@@ -111,7 +135,7 @@
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
               <v-card
                 width="auto"
-                class="rounded-xl ma-2"
+                class="rounded-xl ma-2 about"
                 :elevation="isHovering ? 16 : 2"
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
@@ -143,7 +167,7 @@
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
               <v-card
                 width="auto"
-                class="rounded-xl ma-2"
+                class="rounded-xl ma-2 about"
                 :elevation="isHovering ? 16 : 2"
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
@@ -171,7 +195,7 @@
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
               <v-card
                 width="auto"
-                class="rounded-xl ma-2"
+                class="rounded-xl ma-2 about"
                 :elevation="isHovering ? 16 : 2"
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"

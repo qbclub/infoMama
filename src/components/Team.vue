@@ -1,18 +1,27 @@
 <script setup>
-// import { gsap } from "gsap";
+import { onMounted} from "vue";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
 
-//   mounted() {
-//     gsap.from(".team", {
-//       scrollTrigger: {
-//         trigger: ".team",
-//         start: "top bottom-=200px",
-//         once: true,
-//         toggleActions: "restart pause resume pause",
-//       },
-//       y: 30,
-//       duration: 2,
-//     });
-//   },
+onMounted(() => {
+  let team = document.querySelectorAll(".team");
+
+  team.forEach((element) => {
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element,
+        start: "top bottom-=200px",
+        once: true,
+        // toggleActions: "restart pause resume pause",
+      },
+      x: -100,
+      duration: 2,
+      opacity: 0,
+      ease: "bounce.out",
+    });
+  });
+});
 </script>
 <template>
   <div class="bg-team">
@@ -25,22 +34,25 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col class="d-flex justify-center align-center flex-wrap team">
-          <div class="text-center mentor-card">
+        <v-col
+          class="d-flex justify-center align-center flex-wrap team_wrapper"
+          ref="main"
+        >
+          <div class="text-center mentor-card team">
             <v-avatar size="150" tile class="rounded-circle">
               <v-img src="../assets/images/ivan.jpeg"></v-img>
             </v-avatar>
 
             Чукавин Иван
           </div>
-          <div class="text-center mentor-card">
+          <div class="text-center mentor-card team">
             <v-avatar size="150" tile class="rounded-circle">
               <v-img src="../assets/images/alena.jpg"></v-img>
             </v-avatar>
 
             Шкляева Елена
           </div>
-          <div class="text-center mentor-card">
+          <div class="text-center mentor-card team">
             <v-avatar size="150" tile class="rounded-circle">
               <v-img src="../assets/иконки/qbit.png"></v-img>
             </v-avatar>
@@ -57,7 +69,7 @@
 .bg-team {
   background: rgba(134, 133, 171, 0.1);
 }
-.team {
+.team_wrapper {
   column-gap: 50px;
 }
 .mentor-card {

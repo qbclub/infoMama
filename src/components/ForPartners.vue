@@ -1,6 +1,4 @@
 <script setup>
-
-
 </script>
 
 <template>
@@ -25,8 +23,13 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title> Вдохновлено</v-card-title>
+                <v-card-text>
+                  Самым большым женским ВК сообществом Глазова
+                  <a href="https://vk.com/mama_glazova">
+                    <b>Мамы Глазова.</b>
+                  </a>
+                </v-card-text>
               </v-card>
             </v-hover>
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
@@ -37,7 +40,7 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Заголовок</v-card-title>
+                <v-card-title> Придумано</v-card-title>
                 <v-card-text> тут текст</v-card-text>
               </v-card>
             </v-hover>
@@ -53,7 +56,7 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Сервис платформы "Умный город"</v-card-title>
+                <v-card-title> Поддержано</v-card-title>
                 <v-card-text> про умный город и Смарт Глазов</v-card-text>
               </v-card>
             </v-hover>
@@ -65,7 +68,9 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> При поддержке сообщества "Мамы Глазова"</v-card-title>
+                <v-card-title>
+                  Привлекательно</v-card-title
+                >
                 <v-card-text> количество и описание</v-card-text>
               </v-card>
             </v-hover>
@@ -81,7 +86,7 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Высокая степеь доверия</v-card-title>
+                <v-card-title> Интересно</v-card-title>
                 <v-card-text> как сарафанное радио</v-card-text>
               </v-card>
             </v-hover>
@@ -93,10 +98,17 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Целевая аудитория</v-card-title>
+                <v-card-title> Выгодно</v-card-title>
                 <v-card-text> тут текст</v-card-text>
               </v-card>
             </v-hover>
+          
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col class="d-flex flex-column" cols="12" md="4" offset="md-4">
+          <div class="w-95 h-100 bg-primary rounded-xl">
             <v-hover v-slot="{ isHovering, props }" open-delay="200">
               <v-card
                 width="auto"
@@ -105,10 +117,12 @@
                 :class="{ 'on-hover': isHovering }"
                 v-bind="props"
               >
-                <v-card-title> Точное попадание рекламой</v-card-title>
-                <v-card-text> тут текст</v-card-text>
+                <v-card-title class="text-center"> Ищем</v-card-title>
+                <v-card-text> что-то</v-card-text>
               </v-card>
             </v-hover>
+        
+          
           </div>
         </v-col>
       </v-row>

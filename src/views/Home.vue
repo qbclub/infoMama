@@ -7,6 +7,7 @@ import RoadMap from "@/components/roadMap.vue";
 import VideoLogo from "@/components/VideoLine.vue";
 import Contacts from "@/components/Contacts.vue";
 import TextCarousel from "@/components/TextCarousel.vue";
+
 </script>
 
 <template>

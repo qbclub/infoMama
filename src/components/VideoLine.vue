@@ -3,7 +3,7 @@
 <template>
   <v-container>
     <v-row class="justify-center">
-      <v-col cols="10" md="6" class="d-flex justify-center pa-4">
+      <v-col cols="10" md="6" class="d-flex justify-center">
         <video class="w-100" playsinline autoplay loop muted>
           <source src="../assets/vk.mp4" />
         </video>
