@@ -4,33 +4,67 @@ import { useRouter } from "vue-router";
 
 let props = defineProps({
   roadMapRoute: String,
+  partnersRoute: String,
+  usersRoute: String,
 });
 
+const options = {
+  duration: 300,
+  offset: 0,
+  easing: "easeInOutCubic",
+};
+
 let drawer = ref(false);
-let router = useRouter()
+let router = useRouter();
 </script>
 
 <template>
-  <!-- <v-app-bar border class="d-flex">
-      <div>Пользователям</div>
-      <div>Партнёрам</div>
-      <div>Дорожная карта</div>
-  </v-app-bar> -->
-      <v-app-bar color="primary" prominent>
-        <v-app-bar-nav-icon
-          variant="text"
-          @click.stop="drawer = !drawer"
-        ></v-app-bar-nav-icon>
+  <v-app-bar prominent>
+    <v-app-bar-nav-icon
+      variant="text"
+      @click.stop="drawer = !drawer"
+    ></v-app-bar-nav-icon>
+    <video width="100" playsinline autoplay loop muted>
+      <source src="../../assets/vk.mp4" />
+    </video>
 
-        <v-toolbar-title> Основная информация </v-toolbar-title>
+    <v-toolbar-title class="font-weight-bold"> ИнфоМама </v-toolbar-title>
+  </v-app-bar>
 
-        <v-spacer></v-spacer>
-      </v-app-bar>
-
-      <v-navigation-drawer v-model="drawer" temporary>
-        <v-list-item prepend-icon="mdi-view-dashboard" title="Пользователям" value="home"></v-list-item>
-        <v-list-item prepend-icon="mdi-forum" title="Партнёрам" value="home"></v-list-item>
-        <v-list-item prepend-icon="mdi-view-dashboard" title="Дорожная карта" value="home" @click="router.push(roadMapRoute?roadMapRoute:'/roadMap')"></v-list-item>
-      </v-navigation-drawer>
-
+  <v-navigation-drawer v-model="drawer" temporary>
+    <a href="#for-users">
+      <v-list-item
+        prepend-icon="mdi-view-dashboard"
+        title="Мамам и папам"
+      ></v-list-item>
+    </a>
+    <a href="#partners">
+      <v-list-item prepend-icon="mdi-forum" title="Партнёрам"></v-list-item>
+    </a>
+    <a href="#team">
+      <v-list-item prepend-icon="mdi-forum" title="Команда"></v-list-item>
+    </a>
+    <a href="#roadmap">
+      <v-list-item
+        prepend-icon="mdi-view-dashboard"
+        title="Дорожная карта"
+      ></v-list-item>
+    </a>
+    <a href="#contacts">
+      <v-list-item
+        prepend-icon="mdi-view-dashboard"
+        title="Контакты"
+      ></v-list-item>
+    </a>
+  </v-navigation-drawer>
 </template>
+<style lang="scss" scoped>
+a {
+  text-decoration: none;
+  color: black;
+}
+.v-toolbar__content > .v-toolbar-title {
+   margin-inline-start: 0; 
+}
+</style>
+

@@ -1,6 +1,9 @@
 // Composables
-import roadMapVue from '../components/roadMap.vue'
+import roadMapVue from '../components/roadMap.vue';
+import ForPartnersVue from '../components/ForPartners.vue';
+import ForUsersVue from '../components/ForUsers.vue';
 import { createRouter, createWebHistory } from 'vue-router'
+
 
 const routes = [
   {
@@ -17,16 +20,14 @@ const routes = [
       },
     ],
   },
-  {
-    path: '/roadMap',
-    name: 'roadMap',
-    component: roadMapVue
-  },
+
 ]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+
 })
 
 export default router
