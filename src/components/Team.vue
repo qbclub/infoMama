@@ -66,6 +66,9 @@ onMounted(() => {
   
 
   <style lang="scss" scoped>
+  .v-img{
+    filter: grayscale(100%);
+  }
 .bg-team {
   background: rgba(134, 133, 171, 0.1);
 }

@@ -26,9 +26,10 @@ const sliderText = [
 </template>
 <style lang="scss" scoped>
 .slider {
-  scroll-behavior: smooth;
-  overflow-x: scroll;
+  // scroll-behavior: smooth;
+  overflow-x: auto;
   cursor: all-scroll;
+  line-height: 40px;
   div {
     white-space: nowrap;
     display: flex;
@@ -40,11 +41,11 @@ const sliderText = [
     }
   }
 }
-* {
-  scrollbar-width: 0px;
-}
+// * {
+//   scrollbar-width: 0px;
+// }
 
-*::-webkit-scrollbar {
-  width: 0;
-}
+// *::-webkit-scrollbar {
+//   width: 0;
+// }
 </style>

@@ -34,25 +34,25 @@ let router = useRouter();
   <v-navigation-drawer v-model="drawer" temporary>
     <a href="#for-users">
       <v-list-item
-        prepend-icon="mdi-view-dashboard"
+        prepend-icon="mdi-account-supervisor"
         title="Мамам и папам"
       ></v-list-item>
     </a>
     <a href="#partners">
-      <v-list-item prepend-icon="mdi-forum" title="Партнёрам"></v-list-item>
+      <v-list-item prepend-icon="mdi-hands-pray" title="Партнёрам"></v-list-item>
     </a>
     <a href="#team">
-      <v-list-item prepend-icon="mdi-forum" title="Команда"></v-list-item>
+      <v-list-item prepend-icon="mdi-account-group-outline" title="Команда"></v-list-item>
     </a>
     <a href="#roadmap">
       <v-list-item
-        prepend-icon="mdi-view-dashboard"
+        prepend-icon="mdi-map-outline"
         title="Дорожная карта"
       ></v-list-item>
     </a>
     <a href="#contacts">
       <v-list-item
-        prepend-icon="mdi-view-dashboard"
+        prepend-icon="mdi-card-account-phone-outline"
         title="Контакты"
       ></v-list-item>
     </a>
